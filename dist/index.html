@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-600 to-sky-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Positive Quotes</title>
+</head>
+<body>
+<header>
+    <nav class="bg-opacity-0 border-gray-600">
+        <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="flex items-center">
+                <i class="fas fa-plus-square text-white text-3xl md:text-4xl mr-2 animate-flip-in-x" aria-hidden="true"></i>
+                <span class="font-thin text-white text-2xl md:text-3xl animate-fade-in-right">Positively Quotable</span>
+            </div>
+            <div class="flex md:order-2">
+                <button type="button" class="bg-opacity-0 text-white hover:bg-gray-300 hover-text-black border border-gray-200 rounded-xl shadow-2xl text-sm py-2 px-3" onclick="my_modal_2.showModal()">Learn More</button>
+                <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h1 class="font-semibold font-roboto text-3xl mb-4">Frequently Asked Questions</h1>
+                        <section>
+                            <div class="question">
+                                <h1 class="font-roboto text-xl mt-2"><i class='fas fa-angle-double-right mr-2'></i>What is Positively Quotable?</h1>
+                                <div class="answer hidden mt-2">
+                                    <p class="text-md">Positively Quotable is a web project that I designed and developed with the intention of inspiring and promoting positivity. This simple website offers a collection of motivational and uplifting quotes to provide encouragement to others.</p>
+                                </div>
+                            </div>
+                            <hr class="hr-line mt-2">
+                            <div class="question">
+                                <h1 class="font-roboto text-xl mt-2"><i class='fas fa-angle-double-right mr-2'></i>Where did the quotes come from?</h1>
+                                <div class="answer hidden mt-2">
+                                    <p class="text-md">These quotes have been sourced from a wide range of authors, philosophers, and other influential thinkers from the past. They are considered 'public domain,' which means they're freely available to the public and not protected by copyright.</p>
+                                </div>
+                            </div>
+                            <hr class="hr-line mt-2">
+                            <div class="question">
+                                <h1 class="font-roboto text-xl mt-2"><i class='fas fa-angle-double-right mr-2'></i>How was this website made?</h1>
+                                <div class="answer hidden mt-2">
+                                    <p class="text-md">Positively Quotable primarily utilizes HTML for structuring the content, JavaScript for interactivity and user engagement, and Tailwind CSS for streamlined and responsive styling. With this combination, the site offers a user-friendly experience, providing information and features in an aesthetically pleasing and accessible way.</p>
+                                </div>
+                            </div>
+                            <hr class="hr-line mt-2">
+                            <div class="question">
+                                <h1 class="font-roboto text-xl mt-2"><i class='fas fa-angle-double-right mr-2'></i>How can I contact you?</h1>
+                                <div class="answer hidden mt-2">
+                                    <p class="mb-1">You can find me on the following sites:</p>
+                                    <p class="mb-1"><a href="https://github.com/bpcollins" target="_blank" rel="noopener noreferrer"><i class="fab fa-github text-xl mr-2"></i>GitHub</a></p>
+                                    <p><a href="https://www.linkedin.com/in/briancollins23" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin text-xl mr-2"></i>LinkedIn</a></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+            </div>
+        </nav>
+    </nav>
+</header>
+
+<div class="px-10">
+    <h1 class="text-3xl md:text-5xl text-white text-roboto font-thin text-center mt-12 md:mt-24">Elevate Your Day</h1>
+    <h1 class="text-3xl md:text-5xl text-white text-roboto font-thin text-center">with Inspiring Quotes</h1>
+
+    <div class="mx-auto grid grid-cols-1 max-w-4xl rounded-3xl shadow-2xl bg-white p-4 relative font-roboto h-56 mt-16 md:h-52">
+        <div class="text-xl md:text-2xl quote-box">
+            <div class="quote-container flex items-center justify-center">
+                <i class="fa fa-quote-left text-3xl text-gray-400"></i>
+                <hr class="flex-1 h-px my-0 mx-4 bg-gray-300 border-1">
+            </div>
+            <p id="quote" class="font-black text-center my-2 h-20 md:h-16 transition-opacity flex items-center justify-center"></p>
+            <div class="quote-container flex items-center justify-center mb-4">
+                <hr class="flex-1 h-px my-0 mx-4 bg-gray-300 border-1">
+                <i class="fa fa-quote-right text-3xl text-gray-400"></i>
+            </div>
+        </div>
+        <p id="author" class="absolute bottom-2 right-4 text-gray-400 text-lg md:text-xl transition-opacity"></p>
+    </div>
+    <div class="flex justify-center items-center mt-48 sm:mt-20 md:mt-16">
+        <button class="bg-white hover-bg-gray-300 text-black font-semibold py-3 px-6 border border-gray-200 rounded-xl shadow-2xl text-sm" id="new-quote">New Quote</button>
+    </div>
+</div>
+</body>
+<footer class="fixed bottom-0 w-full bg-opacity-0 font-lato font-thin text-white text-center">
+    <div class="max-w-screen-xl mx-auto text-md p-4">
+        <p>&copy; <span id="currentYear"></span> Positively Quotable | All Rights Reserved</p>
+    </div>
+</footer>
+<script src="/dist/quotes.js"></script>
+<script src="/dist/faq.js"></script>
+<script src="/dist/footer.js"></script>
+</html>
