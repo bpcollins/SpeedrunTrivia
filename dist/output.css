@@ -3399,6 +3399,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 9rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
