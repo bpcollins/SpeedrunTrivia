@@ -4137,6 +4137,15 @@ details.collapse summary::-webkit-details-marker {
   .sm\:mt-20 {
     margin-top: 5rem;
   }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4150,6 +4159,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .md\:h-16 {
