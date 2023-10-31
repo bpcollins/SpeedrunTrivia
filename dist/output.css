@@ -3435,6 +3435,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: auto;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -3908,6 +3912,11 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -4035,6 +4044,20 @@ details.collapse summary::-webkit-details-marker {
 
 body {
   min-height: 100svh;
+}
+
+@media (min-width: 768px) {
+  .md\:invisible.tooltip > .tooltip-arrow:before {
+    visibility: hidden;
+  }
+
+  .md\:invisible[role="tooltip"] > [data-popper-arrow]:before {
+    visibility: hidden;
+  }
+
+  .md\:invisible[role="tooltip"] > [data-popper-arrow]:after {
+    visibility: hidden;
+  }
 }
 
 .hover\:border-gray-300:hover {
@@ -4197,6 +4220,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:order-2 {
     order: 2;
   }
@@ -4207,6 +4238,14 @@ body {
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-16 {
@@ -4258,5 +4297,10 @@ body {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
