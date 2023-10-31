@@ -3455,6 +3455,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 3.5rem;
 }
 
+.mr-2\.5 {
+  margin-right: 0.625rem;
+}
+
 .block {
   display: block;
 }
