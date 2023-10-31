@@ -3379,6 +3379,10 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 1rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -3393,6 +3397,10 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -3530,7 +3538,7 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .animate-fade-in-right {
-  animation: fade-in-right 0.8s ease-in-out;
+  animation: fade-in-right 1s ease-in-out;
 }
 
 @keyframes flip-in-x {
@@ -3546,7 +3554,7 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .animate-flip-in-x {
-  animation: flip-in-x 1s ease-out;
+  animation: flip-in-x 1.2s ease-out;
 }
 
 .cursor-default {
@@ -3730,10 +3738,36 @@ details.collapse summary::-webkit-details-marker {
   background-image: radial-gradient(ellipse at bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[radial-gradient\(ellipse_at_center\2c _var\(--tw-gradient-stops\)\)\] {
+  background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+}
+
 .from-sky-700 {
   --tw-gradient-from: #0369a1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(3 105 161 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sky-500 {
+  --tw-gradient-from: #0ea5e9 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sky-600 {
+  --tw-gradient-from: #0284c7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(2 132 199 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-sky-700 {
+  --tw-gradient-to: rgb(3 105 161 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #0369a1 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-sky-800 {
+  --tw-gradient-to: rgb(7 89 133 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #075985 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-sky-950 {
@@ -4130,6 +4164,10 @@ body {
     order: 2;
   }
 
+  .md\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
   .md\:mt-24 {
     margin-top: 6rem;
   }
@@ -4142,6 +4180,14 @@ body {
     height: 13rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -4150,11 +4196,6 @@ body {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl {

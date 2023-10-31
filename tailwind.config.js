@@ -7,8 +7,8 @@ module.exports = {
         'lato': ['Lato', 'sans-serif'],
       },
       animation: {
-        'flip-in-x': 'flip-in-x 1s ease-out',
-        'fade-in-right': 'fade-in-right 0.8s ease-in-out',
+        'flip-in-x': 'flip-in-x 1.2s ease-out',
+        'fade-in-right': 'fade-in-right 1s ease-in-out',
       },
       keyframes: {
         'flip-in-x': {
