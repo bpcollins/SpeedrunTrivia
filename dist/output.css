@@ -3739,6 +3739,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
 .bg-\[radial-gradient\(ellipse_at_center\2c _var\(--tw-gradient-stops\)\)\] {
   background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
 }
@@ -4178,6 +4182,14 @@ body {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .md\:p-3\.5 {
+    padding: 0.875rem;
   }
 
   .md\:text-2xl {
