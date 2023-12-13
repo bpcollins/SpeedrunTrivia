@@ -1,101 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-500 via-sky-700 to-sky-950">
+<html lang="en" class="from-sky-500 via-sky-700 to-sky-950 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="body width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
-    <title>Positively Quotable</title>
+    <title>Speedrun Trivia!</title>
 </head>
+
 <body>
-<header>
-    <nav class="bg-black bg-opacity-10 border-gray-600">
-        <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2.5 md:p-3.5">
-            <div class="flex items-center">
-                <img src="pqlogo.png" class="h-6 mr-2 md:h-8 md:mr-3 animate-flip-in-x">
-                <span class="font-thin text-white text-xl md:text-2xl animate-fade-in-right">Positively Quotable</span>
-            </div>
-            <div class="flex md:order-2">
-                <button type="button" class="bg-opacity-0 text-white font-thin hover:bg-gray-200 hover-text-black border border-gray-200 rounded-xl shadow-2xl text-sm py-2 px-3" onclick="my_modal_2.showModal()">Learn More</button>
-                <dialog id="my_modal_2" class="modal">
-                    <div class="modal-box">
-                        <form method="dialog">
-                            <button class="btn btn-sm btn-square btn-ghost absolute text-gray-400 hover:bg-gray-100 right-1.5 top-1.5">x</button>
+    <header>
+        <nav class="bg-black bg-opacity-10 border-gray-600">
+            <div class="flex flex-wrap items-center justify-between mx-auto max-w-screen-xl p-2.5 md:p-3">
+                <div class="flex items-center">
+                    <img src="logo.png" class="mr-2 h-6 animate-flip-in-x md:mr-3 md:h-8">
+                    <span class="text-xl font-thin text-white animate-fade-in-right md:text-3xl">Speedrun Trivia!</span>
+                </div>
+                <div class="flex md:order-2">
+                    <button type="button" class="py-2 px-3 text-sm font-thin text-white bg-opacity-0 border border-gray-200 rounded-xl shadow-2xl hover:bg-gray-200 hover:text-black" onclick="leaderboard_modal.showModal()">Leaderboard</button>
+                    <dialog id="leaderboard_modal" class="modal">
+                        <div class="modal-box">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-square btn-ghost absolute right-1.5 top-1.5 text-gray-400 hover:bg-gray-100">x</button>
+                            </form>
+                            <h1 class="ml-5 text-3xl font-semibold font-roboto">Leaderboard</h1>
+                            <section>
+                                <p class="ml-5 mb-6">See how you compare to the top 10 players!</p>
+                                <div class="grid grid-cols-2 grid-rows-6 mx-5 mb-8 border border-gray-300 bg-slate-100 p-4 rounded-xl">
+                                    <div class="font-bold">Player Name</div>
+                                    <div class="font-bold">Score</div>
+                                    <div>User 1</div>
+                                    <div>Score 1</div>
+                                    <div>User 2</div>
+                                    <div>Score 2</div>
+                                    <div>User 3</div>
+                                    <div>Score 3</div>
+                                    <div>User 4</div>
+                                    <div>Score 4</div>
+                                    <div>User 5</div>
+                                    <div>Score 5</div>
+                                    <div>User 6</div>
+                                    <div>Score 6</div>
+                                    <div>User 7</div>
+                                    <div>Score 7</div>
+                                    <div>User 8</div>
+                                    <div>Score 8</div>
+                                    <div>User 9</div>
+                                    <div>Score 9</div>
+                                    <div>User 10</div>
+                                    <div>Score 10</div>
+                                </div>
+                            </section>
+                            <div class="flex justify-center modal-action">
+                                <form method="dialog">
+                                    <button class="btn text-base normal-case font-lato border border-gray-300">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
                         </form>
-                        <h1 class="font-semibold font-roboto text-2xl ml-7 mb-4">About This Project</h1>
-                        <section>
-                            <div class="question">
-                                <h1 class="font-roboto text-xl mt-3"><i class='fas fa-angle-double-right mr-2 text-gray-400'></i>What is Positively Quotable?</h1>
-                                <div class="answer hidden mt-3">
-                                    <p class="text-md">Positively Quotable is a web project that I designed and developed with the intention of inspiring and promoting positivity. This simple website offers a collection of motivational and uplifting quotes to provide encouragement to others.</p>
-                                </div>
-                            </div>
-                            <hr class="hr-line mt-3">
-                            <div class="question">
-                                <h1 class="font-roboto text-xl mt-3"><i class='fas fa-angle-double-right mr-2 text-gray-400'></i>Where did the quotes come from?</h1>
-                                <div class="answer hidden mt-3">
-                                    <p class="text-md">These quotes have been sourced from a wide range of authors, philosophers, and other influential thinkers from the past. They are considered 'public domain,' which means they're freely available to the public and not protected by copyright.</p>
-                                </div>
-                            </div>
-                            <hr class="hr-line mt-3">
-                            <div class="question">
-                                <h1 class="font-roboto text-xl mt-3"><i class='fas fa-angle-double-right mr-2 text-gray-400'></i>How was this website made?</h1>
-                                <div class="answer hidden mt-3">
-                                    <p class="text-md">Positively Quotable primarily utilizes HTML for structuring the content, JavaScript for interactivity and user engagement, and Tailwind CSS for streamlined and responsive styling. With this combination, the site offers a user-friendly experience, providing information and features in an aesthetically pleasing and accessible way.</p>
-                                </div>
-                            </div>
-                            <hr class="hr-line mt-3">
-                            <div class="question">
-                                <h1 class="font-roboto text-xl mt-3"><i class='fas fa-angle-double-right mr-2 text-gray-400'></i>How can I contact you?</h1>
-                                <div class="answer hidden mt-3">
-                                    <p class="mb-2">You can find me on the following sites:</p>
-                                    <p class="mb-2"><a href="https://github.com/bpcollins" target="_blank" rel="noopener noreferrer"><i class="fab fa-github text-2xl mr-2"></i>GitHub</a></p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <form method="dialog" class="modal-backdrop">
-                        <button>close</button>
-                    </form>
-                </dialog>
+                    </dialog>
+                </div>
             </div>
         </nav>
-    </nav>
-</header>
+    </header>
 
-<div class="px-6">
-    <h1 class="text-4xl text-white text-lato font-thin text-center mt-28 hidden md:block">Elevate your day with inspiring quotes</h1>
-    <h1 class="text-3xl text-white text-lato font-thin text-center mt-12 md:hidden">Elevate your day</h1>
-    <h1 class="text-3xl text-white text-lato font-thin text-center md:hidden">with inspiring quotes</h1>
-
-    <div class="mx-auto grid grid-cols-1 max-w-4xl rounded-3xl shadow-2xl bg-white p-4 relative font-roboto h-56 mt-12 md:h-52">
-        <div class="text-xl md:text-2xl quote-box">
-            <div class="quote-container flex items-center justify-center">
-                <i class="fa fa-quote-left text-3xl text-gray-400"></i>
-                <hr class="flex-1 h-px my-0 mx-4 bg-gray-300 border-1">
+    <div class="px-6">
+        <h1 class="mt-8 text-center text-xl font-thin text-white md:mt-12 md:text-3xl">Test your knowledge before time runs out!</h1>
+        <p class="mt-2 text-center text-xl font-thin text-white md:mt-2 md:text-2xl">Select the correct answer as fast as you can.</p>
+        <div class="mt-8 mx-auto max-w-md bg-white bg-opacity-20 p-4 rounded-2xl shadow-2xl text-white md:mt-12">
+            <div id="timer" class="text-center text-xl font-thin md:text-2xl">
+                <p>Seconds Remaining: <span class="font-semibold" id="timer-value">30</span></p>
             </div>
-            <p id="quote" class="font-black text-center my-2 h-20 md:h-16 transition-opacity flex items-center justify-center"></p>
-            <div class="quote-container flex items-center justify-center mb-4">
-                <hr class="flex-1 h-px my-0 mx-4 bg-gray-300 border-1">
-                <i class="fa fa-quote-right text-3xl text-gray-400"></i>
+            <div id="score-container" class="mt-4 text-center text-xl font-thin md:text-2xl">
+                <p>Correct Answers: <span class="font-semibold" id="score">0</span></p>
             </div>
         </div>
-        <p id="author" class="absolute bottom-2 right-4 text-gray-400 text-lg md:text-xl transition-opacity"></p>
+        <div class="mt-8 mx-auto max-w-4xl bg-white bg-opacity-30 p-4 rounded-2xl shadow-2xl md:mt-12">
+            <div class="relative grid h-32 font-roboto md:h-28">
+                <div id="question-container" class="flex items-center justify-center h-full bg-white rounded-xl text-2xl md:text-3xl">
+                    <p id="question-text">Get ready to answer!</p>
+                </div>
+            </div>
+            <div id="answers-container" class="mt-8 relative grid grid-cols-2 gap-8 max-w-4xl font-roboto">
+                <button id="answerA" class="py-2 px-4 font-thin bg-white text-black rounded-xl hover:bg-sky-800 hover:text-white">A) Answer 1</button>
+                <button id="answerB" class="py-2 px-4 font-thin bg-white text-black rounded-xl hover:bg-sky-800 hover:text-white">B) Answer 2</button>
+                <button id="answerC" class="py-2 px-4 font-thin bg-white text-black rounded-xl hover:bg-sky-800 hover:text-white">C) Answer 3</button>
+                <button id="answerD" class="py-2 px-4 font-thin bg-white text-black rounded-xl hover:bg-sky-800 hover:text-white">D) Answer 4</button>
+            </div>
+        </div>
+        <div class="mt-24 mx-auto grid max-w-4xl">
+            <div class="flex items-center justify-center">
+                <button class="py-3 px-6 text-base font-lato text-black bg-white border-2 border-gray-100 p-4 rounded-xl shadow-2xl hover:bg-gray-300 hover:border-gray-400" id="start-button" onclick="startGame()">Start Game</button>
+            </div>
+        </div>
     </div>
-    <div class="flex justify-center items-center mt-12">
-        <button class="bg-white hover-bg-gray-300 text-black font-lato text-sm md:text-base py-3 px-6 border-gray-200 rounded-xl shadow-2xl" id="new-quote">New Quote</button>
+    <div class="flex justify-center md:order-2">
+        <dialog id="results_modal" class="modal">
+            <div class="modal-box">
+                <h1 class="flex justify-center text-4xl font-semibold font-roboto">GAME OVER!</h1>
+                <section>
+                    <div id="score-container2" class="flex justify-center my-8 text-xl font-thin font-lato md:text-xl">
+                        <script>
+                            showResultScore();
+                        </script>
+                    </div>
+                </section>
+                <div class="flex justify-center mt-4 modal-action">
+                    <form method="dialog">
+                        <button class="btn text-base normal-case font-lato border border-gray-300" id="reset-button" onclick="resetGame()">Reset Game</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </div>
-</div>
+
+    <footer class="absolute bottom-0 w-full text-center text-white font-lato font-thin z-20 bg-opacity-0">
+        <div class="mx-auto max-w-screen-xl p-2 text-md">
+            <p>&copy; <span id="currentYear"></span> Speedrun Trivia!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<footer class="absolute bottom-0 w-full z-20 bg-opacity-0 font-lato font-thin text-white text-center">
-    <div class="max-w-screen-xl mx-auto text-md p-2">
-        <p>&copy; <span id="currentYear"></span> Positively Quotable</p>
-    </div>
-</footer>
-<script src="quotes.js"></script>
-<script src="faq.js"></script>
-<script src="footer.js"></script>
+
 </html>
