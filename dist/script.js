@@ -20,11 +20,6 @@ const questions = [
     correctAnswer: "Seven"
   },
   {
-    question: "What is the longest river in the world?",
-    options: ["Amazon", "Nile", "Yellow", "Mississippi"],
-    correctAnswer: "Nile"
-  },
-  {
     question: "How many quarts in a gallon?",
     options: ["Five", "Six", "Four", "Eight"],
     correctAnswer: "Four"
@@ -225,11 +220,6 @@ const questions = [
     correctAnswer: "1945"
   },
   {
-    question: "What is the largest mammal in the world?",
-    options: ["Giraffe", "Blue Whale", "Gorilla", "Elephant"],
-    correctAnswer: "Blue Whale"
-  },
-  {
     question: "Who wrote 'The Odyssey'?",
     options: ["Virgil", "Sophocles", "Aristotle", "Homer"],
     correctAnswer: "Homer"
@@ -274,16 +264,6 @@ const questions = [
     options: ["Milan", "Florence", "Venice", "Rome"],
     correctAnswer: "Rome"
   },
-  {
-    question: "In which year did the Titanic sink?",
-    options: ["1905", "1920", "1898", "1912"],
-    correctAnswer: "1912"
-  },
-  {
-    question: "What is the largest planet in our solar system?",
-    options: ["Saturn", "Mars", "Earth", "Jupiter"],
-    correctAnswer: "Jupiter"
-  }
 ];
 
 let shuffledQuestions = [];
