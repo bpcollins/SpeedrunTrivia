@@ -323,6 +323,7 @@ function checkAnswer(selectedButton, selectedAnswer) {
 
     if (isCorrect) {
         selectedButton.classList.add("bg-green-500", "hover:bg-green-500");
+        incrementScore();
     } else {
         selectedButton.classList.add("bg-red-500", "hover:bg-red-500");
     }
@@ -330,7 +331,7 @@ function checkAnswer(selectedButton, selectedAnswer) {
     setTimeout(() => {
         selectedButton.classList.remove("bg-green-500", "hover:bg-green-500", "bg-red-500", "hover:bg-red-500");
         nextQuestion();
-    }, 400);
+    }, 250);
 }
 
 
