@@ -361,7 +361,7 @@ function resetGame() {
   correctAnswers = 0;
   clearInterval(timer);
   document.getElementById("score").innerText = "0";
-  document.getElementById("timer-value").innerText = "30";
+  document.getElementById("timer-value").innerText = "60";
 
   const originalQuestion = {
     question: "Get ready to answer!",
@@ -413,7 +413,7 @@ function startGame() {
     document.getElementById('score').innerText = correctAnswers;
     const randomQuestion = getRandomQuestion();
     displayQuestion(randomQuestion);
-    startTimer(29);
+    startTimer(59);
   }
 }
 
