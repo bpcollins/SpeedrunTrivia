@@ -4295,4 +4295,19 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:hover\:bg-sky-800:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(7 89 133 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-gray-300:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }

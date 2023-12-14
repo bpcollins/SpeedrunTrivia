@@ -312,7 +312,7 @@ function displayQuestion(questionObj) {
         const button = document.createElement("button");
         button.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
         button.addEventListener("click", () => checkAnswer(button, option));
-        button.classList.add("bg-white", "hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
+        button.classList.add("bg-white", "md:hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
         answersContainer.appendChild(button);
     });
 }
