@@ -322,10 +322,10 @@ function checkAnswer(selectedButton, selectedAnswer) {
     let isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
     if (isCorrect) {
-        selectedButton.classList.add("bg-green-500", "hover:bg-green-500");
+        selectedButton.classList.add("bg-green-500", "hover:bg-green-500", "md:bg-green-500", "md:hover:bg-green-500", );
         incrementScore();
     } else {
-        selectedButton.classList.add("bg-red-500", "hover:bg-red-500");
+        selectedButton.classList.add("bg-red-500", "hover:bg-red-500", "md:bg-red-500", "md:hover:bg-red-500");
     }
 
     setTimeout(() => {
