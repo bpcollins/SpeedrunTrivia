@@ -72,7 +72,7 @@
 
     <div class="px-6">
         <h1 class="mt-4 text-center text-xl font-thin text-white md:mt-12 md:text-3xl">Test your knowledge before time runs out!</h1>
-        <p class="text-center text-xl font-thin text-white md:mt-2 md:text-2xl">Select the correct answer as fast as you can.</p>
+        <p class="text-center text-lg font-thin text-white md:mt-2 md:text-2xl">Select the correct answer as fast as you can.</p>
         <div class="mt-4 mx-auto max-w-md bg-white bg-opacity-20 p-2 rounded-2xl shadow-2xl text-white md:mt-12 md:p-4">
             <div id="timer" class="text-center text-lg font-thin md:text-2xl">
                 <p>Seconds Remaining: <span class="font-semibold" id="timer-value">30</span></p>
@@ -83,9 +83,10 @@
         </div>
         <div class="mt-6 mx-auto max-w-4xl bg-white bg-opacity-30 p-4 rounded-2xl shadow-2xl md:mt-12">
             <div class="relative grid h-24 font-roboto md:h-28">
-                <div id="question-container" class="flex items-center justify-center h-full bg-white rounded-xl text-lg md:text-3xl">
-                    <p id="question-text">Get ready to answer!</p>
+                <div id="question-container" class="flex items-center justify-center h-full bg-white rounded-xl text-lg text-center p-4 md:text-3xl">
+                    <p id="question-text" class="m-0">Get ready to answer!</p>
                 </div>
+
             </div>
             <div id="answers-container" class="mt-4 relative grid grid-cols-2 gap-4 max-w-4xl text-base font-roboto md:gap-8 md:mt-8 md:text-xl">
                 <button id="answerA" class="py-2 px-4 font-thin bg-white text-black rounded-xl hover:bg-sky-800 hover:text-white">A) Answer 1</button>

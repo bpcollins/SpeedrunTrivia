@@ -301,31 +301,38 @@ function getRandomQuestion() {
 }
 
 function displayQuestion(questionObj) {
-  const questionContainer = document.getElementById("question-container");
-  const answersContainer = document.getElementById("answers-container");
+    const questionContainer = document.getElementById("question-container");
+    const answersContainer = document.getElementById("answers-container");
 
-  questionContainer.textContent = questionObj.question;
+    questionContainer.textContent = questionObj.question;
 
-  answersContainer.innerHTML = "";
+    answersContainer.innerHTML = "";
 
-  questionObj.options.forEach((option, index) => {
-    const button = document.createElement("button");
-    button.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
-    button.addEventListener("click", () => checkAnswer(option));
-    button.classList.add("bg-white", "hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
-    answersContainer.appendChild(button);
-  });
+    questionObj.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
+        button.addEventListener("click", () => checkAnswer(button, option));
+        button.classList.add("bg-white", "hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
+        answersContainer.appendChild(button);
+    });
 }
 
-function checkAnswer(selectedAnswer) {
-  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+function checkAnswer(selectedButton, selectedAnswer) {
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    let isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
-  if (selectedAnswer === currentQuestion.correctAnswer) {
-    incrementScore();
-  }
+    if (isCorrect) {
+        selectedButton.classList.add("bg-green-500", "hover:bg-green-500");
+    } else {
+        selectedButton.classList.add("bg-red-500", "hover:bg-red-500");
+    }
 
-  nextQuestion();
+    setTimeout(() => {
+        selectedButton.classList.remove("bg-green-500", "hover:bg-green-500", "bg-red-500", "hover:bg-red-500");
+        nextQuestion();
+    }, 400);
 }
+
 
 function nextQuestion() {
   currentQuestionIndex++;
@@ -386,7 +393,6 @@ function showResultScore() {
 }
 
 function showResultModal() {
-  console.log('showResultModal function called');
   showResultScore();
   const modal = document.getElementById('results_modal');
   modal.showModal();

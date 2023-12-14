@@ -3355,6 +3355,10 @@ details.collapse summary::-webkit-details-marker {
   z-index: 50;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -3402,12 +3406,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -3438,8 +3442,8 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
+.h-24 {
+  height: 6rem;
 }
 
 .h-4 {
@@ -3456,10 +3460,6 @@ details.collapse summary::-webkit-details-marker {
 
 .h-full {
   height: 100%;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .w-1\/2 {
@@ -3632,10 +3632,6 @@ details.collapse summary::-webkit-details-marker {
   justify-content: space-between;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -3742,6 +3738,16 @@ details.collapse summary::-webkit-details-marker {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -4070,6 +4076,16 @@ body {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
