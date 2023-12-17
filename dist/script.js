@@ -301,7 +301,7 @@ function checkAnswer(selectedButton, selectedAnswer) {
     let isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
     if (isCorrect) {
-        selectedButton.classList.add("bg-green-500", "hover:bg-green-500", "md:bg-green-500", "md:hover:bg-green-500", );
+        selectedButton.classList.add("bg-green-500", "hover:bg-green-500", "md:bg-green-500", "md:hover:bg-green-500");
         incrementScore();
     } else {
         selectedButton.classList.add("bg-red-500", "hover:bg-red-500", "md:bg-red-500", "md:hover:bg-red-500");
@@ -355,13 +355,11 @@ function startTimer(duration) {
 }
 
 function showResultScore() {
-    if (typeof correctAnswers !== 'undefined' && correctAnswers !== null) {
-        const totalQuestions = shuffledQuestions.length;
-        const answeredQuestions = currentQuestionIndex;
-        const scoreContainer = document.getElementById('score-container2');
-        scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
-        document.getElementById('final-score').value = correctAnswers; // Update the hidden score input
-    }
+    const totalQuestions = shuffledQuestions.length;
+    const answeredQuestions = currentQuestionIndex;
+    const scoreContainer = document.getElementById('score-container2');
+    scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
+    document.getElementById('final-score').value = correctAnswers;
 }
 
 function showResultModal() {
@@ -372,6 +370,8 @@ function showResultModal() {
 
 document.getElementById('submit-score-form').addEventListener('submit', function(e) {
     e.preventDefault();
+    closeModal();
+
     const username = document.getElementById('username').value;
     const score = document.getElementById('final-score').value;
 
@@ -386,11 +386,19 @@ document.getElementById('submit-score-form').addEventListener('submit', function
     .then(data => {
         console.log('Success:', data);
         fetchLeaderboard();
+        resetGame();
     })
     .catch((error) => {
         console.error('Error:', error);
     });
 });
+
+function closeModal() {
+    const modal = document.getElementById('results_modal');
+    if (modal && modal.close) {
+        modal.close();
+    }
+}
 
 function fetchLeaderboard() {
     fetch('https://speedruntrivia.onrender.com/leaderboard')
