@@ -273,11 +273,11 @@ let gameStarted = false;
 let timer;
 
 function shuffleQuestions() {
-  shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
+    shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 }
 
 function getRandomQuestion() {
-  return shuffledQuestions[currentQuestionIndex];
+    return shuffledQuestions[currentQuestionIndex];
 }
 
 function displayQuestion(questionObj) {
@@ -285,7 +285,6 @@ function displayQuestion(questionObj) {
     const answersContainer = document.getElementById("answers-container");
 
     questionContainer.textContent = questionObj.question;
-
     answersContainer.innerHTML = "";
 
     questionObj.options.forEach((option, index) => {
@@ -302,10 +301,10 @@ function checkAnswer(selectedButton, selectedAnswer) {
     let isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
     if (isCorrect) {
-        selectedButton.classList.add("bg-green-500", "hover:bg-green-500", "md:bg-green-500", "md:hover:bg-green-500", );
+        selectedButton.classList.add("bg-green-500", "hover:bg-green-500");
         incrementScore();
     } else {
-        selectedButton.classList.add("bg-red-500", "hover:bg-red-500", "md:bg-red-500", "md:hover:bg-red-500");
+        selectedButton.classList.add("bg-red-500", "hover:bg-red-500");
     }
 
     setTimeout(() => {
@@ -314,95 +313,68 @@ function checkAnswer(selectedButton, selectedAnswer) {
     }, 250);
 }
 
-
 function nextQuestion() {
-  currentQuestionIndex++;
-
-  if (currentQuestionIndex < shuffledQuestions.length) {
-    displayQuestion(shuffledQuestions[currentQuestionIndex]);
-  } else {
-    clearInterval(timer);
-    showResultModal();
-  }
+    currentQuestionIndex++;
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        displayQuestion(shuffledQuestions[currentQuestionIndex]);
+    } else {
+        clearInterval(timer);
+        showResultModal();
+    }
 }
 
 function incrementScore() {
-  correctAnswers++;
-  document.getElementById('score').innerText = correctAnswers;
+    correctAnswers++;
+    document.getElementById('score').innerText = correctAnswers;
 }
 
 function updateTimer(seconds) {
-  document.getElementById('timer-value').innerText = seconds;
+    document.getElementById('timer-value').innerText = seconds;
 }
 
 function resetGame() {
-  gameStarted = false;
-  currentQuestionIndex = 0;
-  correctAnswers = 0;
-  clearInterval(timer);
-  document.getElementById("score").innerText = "0";
-  document.getElementById("timer-value").innerText = "60";
-
-  const originalQuestion = {
-    question: "Get ready to answer!",
-    options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-  };
-
-  displayQuestion(originalQuestion);
+    gameStarted = false;
+    currentQuestionIndex = 0;
+    correctAnswers = 0;
+    clearInterval(timer);
+    document.getElementById("score").innerText = "0";
+    document.getElementById("timer-value").innerText = "60";
+    displayQuestion(getRandomQuestion());
 }
 
 function startTimer(duration) {
-  let seconds = duration;
-  timer = setInterval(function () {
-    updateTimer(seconds);
-    seconds--;
-
-    if (seconds < 0) {
-      clearInterval(timer);
-      showResultModal();
-    }
-  }, 1000);
+    let seconds = duration;
+    timer = setInterval(function () {
+        updateTimer(seconds);
+        seconds--;
+        if (seconds < 0) {
+            clearInterval(timer);
+            showResultModal();
+        }
+    }, 1000);
 }
 
 function showResultScore() {
-  const totalQuestions = shuffledQuestions.length;
-  const answeredQuestions = currentQuestionIndex;
-  const correctAnswers = document.getElementById('score').innerText;
-
-  const scoreContainer = document.getElementById('score-container2');
-  scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
+    const totalQuestions = shuffledQuestions.length;
+    const answeredQuestions = currentQuestionIndex;
+    const correctAnswers = document.getElementById('score').innerText;
+    const scoreContainer = document.getElementById('score-container2');
+    scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
+    document.getElementById('final-score').value = correctAnswers; // Update the hidden score input
 }
 
 function showResultModal() {
-  showResultScore();
-  const modal = document.getElementById('results_modal');
-  modal.showModal();
-}
-
-window.addEventListener("load", () => {
-  const startButton = document.getElementById("start-button");
-  startButton.addEventListener("click", startGame);
-});
-
-function startGame() {
-  if (!gameStarted) {
-    gameStarted = true;
-    currentQuestionIndex = 0;
-    correctAnswers = 0;
-    shuffleQuestions();
-    document.getElementById('score').innerText = correctAnswers;
-    const randomQuestion = getRandomQuestion();
-    displayQuestion(randomQuestion);
-    startTimer(59);
-  }
+    showResultScore();
+    const modal = document.getElementById('results_modal');
+    modal.showModal();
 }
 
 document.getElementById('submit-score-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const username = document.getElementById('username').value;
-    const score = document.getElementById('final-score').value; // Set this value based on the game's score
+    const score = document.getElementById('final-score').value;
 
-    fetch('/submit-score', {
+    fetch('https://speedruntrivia.onrender.com/submit-score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -412,7 +384,7 @@ document.getElementById('submit-score-form').addEventListener('submit', function
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        // Optionally close the modal or give feedback to the user
+        fetchLeaderboard();
     })
     .catch((error) => {
         console.error('Error:', error);
@@ -420,11 +392,11 @@ document.getElementById('submit-score-form').addEventListener('submit', function
 });
 
 function fetchLeaderboard() {
-    fetch('/leaderboard')
+    fetch('https://speedruntrivia.onrender.com/leaderboard')
     .then(response => response.json())
     .then(data => {
         const leaderboardDiv = document.getElementById('leaderboard-content');
-        leaderboardDiv.innerHTML = ''; // Clear existing content
+        leaderboardDiv.innerHTML = '';
         data.forEach(item => {
             leaderboardDiv.innerHTML += `<div>${item.username}: ${item.score}</div>`;
         });
@@ -434,7 +406,23 @@ function fetchLeaderboard() {
     });
 }
 
+window.addEventListener("load", () => {
+    const startButton = document.getElementById("start-button");
+    startButton.addEventListener("click", startGame);
+    fetchLeaderboard();
+});
+
+function startGame() {
+    if (!gameStarted) {
+        gameStarted = true;
+        currentQuestionIndex = 0;
+        correctAnswers = 0;
+        shuffleQuestions();
+        document.getElementById('score').innerText = correctAnswers;
+        displayQuestion(getRandomQuestion());
+        startTimer(59);
+    }
+}
 
 const currentYear = new Date().getFullYear();
-
 document.getElementById('currentYear').innerText = currentYear;
