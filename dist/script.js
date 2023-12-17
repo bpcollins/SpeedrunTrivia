@@ -272,6 +272,12 @@ let correctAnswers = 0;
 let gameStarted = false;
 let timer;
 
+const initialQuestion = {
+    question: "Get ready to answer!",
+    options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+    correctAnswer: ""
+};
+
 function shuffleQuestions() {
     shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 }
@@ -339,7 +345,8 @@ function resetGame() {
     clearInterval(timer);
     document.getElementById("score").innerText = "0";
     document.getElementById("timer-value").innerText = "60";
-    displayQuestion(getRandomQuestion());
+    displayQuestion(initialQuestion);
+    document.getElementById('results_modal').close();
 }
 
 function startTimer(duration) {
@@ -370,8 +377,6 @@ function showResultModal() {
 
 document.getElementById('submit-score-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    closeModal();
-
     const username = document.getElementById('username').value;
     const score = document.getElementById('final-score').value;
 
@@ -392,13 +397,6 @@ document.getElementById('submit-score-form').addEventListener('submit', function
         console.error('Error:', error);
     });
 });
-
-function closeModal() {
-    const modal = document.getElementById('results_modal');
-    if (modal && modal.close) {
-        modal.close();
-    }
-}
 
 function fetchLeaderboard() {
     fetch('https://speedruntrivia.onrender.com/leaderboard')
@@ -427,7 +425,6 @@ function startGame() {
         currentQuestionIndex = 0;
         correctAnswers = 0;
         shuffleQuestions();
-        document.getElementById('score').innerText = correctAnswers;
         displayQuestion(getRandomQuestion());
         startTimer(59);
     }
