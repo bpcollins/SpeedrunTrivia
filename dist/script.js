@@ -397,6 +397,44 @@ function startGame() {
   }
 }
 
+document.getElementById('submit-score-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const score = document.getElementById('final-score').value; // Set this value based on the game's score
+
+    fetch('/submit-score', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, score }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // Optionally close the modal or give feedback to the user
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});
+
+function fetchLeaderboard() {
+    fetch('/leaderboard')
+    .then(response => response.json())
+    .then(data => {
+        const leaderboardDiv = document.getElementById('leaderboard-content');
+        leaderboardDiv.innerHTML = ''; // Clear existing content
+        data.forEach(item => {
+            leaderboardDiv.innerHTML += `<div>${item.username}: ${item.score}</div>`;
+        });
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+}
+
+
 const currentYear = new Date().getFullYear();
 
 document.getElementById('currentYear').innerText = currentYear;

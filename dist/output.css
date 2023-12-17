@@ -3905,10 +3905,6 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
 }
