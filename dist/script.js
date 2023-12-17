@@ -301,10 +301,10 @@ function checkAnswer(selectedButton, selectedAnswer) {
     let isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
     if (isCorrect) {
-        selectedButton.classList.add("bg-green-500", "hover:bg-green-500");
+        selectedButton.classList.add("bg-green-500", "hover:bg-green-500", "md:bg-green-500", "md:hover:bg-green-500", );
         incrementScore();
     } else {
-        selectedButton.classList.add("bg-red-500", "hover:bg-red-500");
+        selectedButton.classList.add("bg-red-500", "hover:bg-red-500", "md:bg-red-500", "md:hover:bg-red-500");
     }
 
     setTimeout(() => {
@@ -355,12 +355,13 @@ function startTimer(duration) {
 }
 
 function showResultScore() {
-    const totalQuestions = shuffledQuestions.length;
-    const answeredQuestions = currentQuestionIndex;
-    const correctAnswers = document.getElementById('score').innerText;
-    const scoreContainer = document.getElementById('score-container2');
-    scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
-    document.getElementById('final-score').value = correctAnswers; // Update the hidden score input
+    if (typeof correctAnswers !== 'undefined' && correctAnswers !== null) {
+        const totalQuestions = shuffledQuestions.length;
+        const answeredQuestions = currentQuestionIndex;
+        const scoreContainer = document.getElementById('score-container2');
+        scoreContainer.innerHTML = `<p>You got <span>${correctAnswers} out of ${answeredQuestions} correct</span></p>`;
+        document.getElementById('final-score').value = correctAnswers; // Update the hidden score input
+    }
 }
 
 function showResultModal() {
