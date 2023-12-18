@@ -10,13 +10,36 @@
     display: none;
 }
 
-body {
-    min-height: 100svh;
-}
-
-@media screen and (min-width: 768px) and (max-height: 875px) {
-    .footer-custom {
-        display: none !important;
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
+    }
+    .content {
+        flex: 1;
+    }
+    @media (min-height: 620px) {
+        .footer-custom {
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
+    }
+    .content {
+        flex: 1;
+    }
+    @media (min-height: 825px) {
+        .footer-custom {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

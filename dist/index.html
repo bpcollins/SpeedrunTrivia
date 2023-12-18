@@ -29,7 +29,7 @@
                             </form>
                             <h1 class="ml-5 text-3xl font-semibold font-roboto">Leaderboard</h1>
                             <section>
-                                <p class="ml-5 mb-6">See how you compare to the top 10 players!</p>
+                                <p class="ml-5 mb-6">Here are our top ten trivia </p>
                                 <div class="grid grid-cols-2 grid-rows-1 mx-5 mb-8 border border-gray-300 bg-slate-100 p-4 rounded-xl">
                                     <div id="leaderboard-content">
                                     </div>
@@ -51,9 +51,9 @@
     </header>
 
     <div class="px-6">
-        <h1 class="mt-4 text-center text-xl font-thin text-white md:mt-12 md:text-3xl">Test your knowledge before time runs out!</h1>
+        <h1 class="mt-4 text-center text-xl font-thin text-white md:mt-10 md:text-3xl">Test your knowledge before time runs out!</h1>
         <p class="text-center text-lg font-thin text-white md:mt-2 md:text-2xl">Select the correct answer as fast as you can.</p>
-        <div class="mt-4 mx-auto max-w-md bg-white bg-opacity-20 p-2 rounded-2xl shadow-2xl text-white md:mt-12 md:p-4">
+        <div class="mt-4 mx-auto max-w-md bg-white bg-opacity-20 p-2 rounded-2xl shadow-2xl text-white md:mt-8 md:p-4">
             <div id="timer" class="text-center text-lg font-thin md:text-2xl">
                 <p>Seconds Remaining: <span class="font-semibold" id="timer-value">60</span></p>
             </div>
@@ -61,20 +61,20 @@
                 <p>Correct Answers: <span class="font-semibold" id="score">0</span></p>
             </div>
         </div>
-        <div class="mt-6 mx-auto max-w-4xl bg-white bg-opacity-30 p-4 rounded-2xl shadow-2xl md:mt-12">
+        <div class="mt-6 mx-auto max-w-4xl bg-white bg-opacity-30 p-4 rounded-2xl shadow-2xl md:mt-10">
             <div class="relative grid h-24 font-roboto md:h-28">
                 <div id="question-container" class="flex items-center justify-center h-full bg-white rounded-xl text-lg text-center p-4 md:text-3xl">
                     <p id="question-text" class="m-0">Get ready to answer!</p>
                 </div>
             </div>
-            <div id="answers-container" class="mt-4 relative grid grid-cols-2 gap-4 max-w-4xl text-base font-roboto md:gap-8 md:mt-8 md:text-xl">
+            <div id="answers-container" class="mt-4 relative grid grid-cols-2 gap-4 max-w-4xl text-base font-roboto md:gap-6 md:mt-6 md:text-xl">
                 <button id="answerA" class="py-2 px-4 font-thin bg-white text-black rounded-xl md:hover:bg-gray-300">A) Answer 1</button>
                 <button id="answerB" class="py-2 px-4 font-thin bg-white text-black rounded-xl md:hover:bg-gray-300">B) Answer 2</button>
                 <button id="answerC" class="py-2 px-4 font-thin bg-white text-black rounded-xl md:hover:bg-gray-300">C) Answer 3</button>
                 <button id="answerD" class="py-2 px-4 font-thin bg-white text-black rounded-xl md:hover:bg-gray-300">D) Answer 4</button>
             </div>
         </div>
-        <div class="mt-8 mx-auto grid max-w-4xl md:mt-24">
+        <div class="mt-8 mx-auto grid max-w-4xl md:mt-16 md:mb-12">
             <div class="flex items-center justify-center">
                 <button class="py-3 px-6 text-base font-lato text-black bg-white border-2 border-gray-100 p-4 rounded-xl shadow-2xl hover:bg-gray-300 hover:border-gray-400" id="start-button" onclick="startGame()">Start Game</button>
             </div>
@@ -99,11 +99,11 @@
         </dialog>
     </div>
 
-    <footer class="footer-custom absolute bottom-0 w-full text-center text-white font-lato font-thin z-20 bg-opacity-0">
-        <div class="mx-auto max-w-screen-xl p-2 text-md">
-            <p>&copy; <span id="currentYear"></span> Speedrun Trivia!</p>
-        </div>
-    </footer>
+<footer class="footer-custom w-full text-center text-white font-lato font-thin z-20 bg-opacity-0">
+    <div class="mx-auto max-w-screen-xl p-2 text-md">
+        <p>&copy; <span id="currentYear"></span> Speedrun Trivia!</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>
