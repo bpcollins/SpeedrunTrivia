@@ -154,8 +154,29 @@ function fetchLeaderboard() {
         .then(data => {
             const leaderboardDiv = document.getElementById('leaderboard-content');
             leaderboardDiv.innerHTML = '';
-            data.forEach(item => {
-                leaderboardDiv.innerHTML += `<div>${item.username}: ${item.score}</div>`;
+            leaderboardDiv.className = 'grid grid-cols-2 w-full bg-slate-100 border border-gray-300 rounded-xl p-6';
+
+            const nameHeaderDiv = document.createElement('div');
+            nameHeaderDiv.classList.add('font-bold', 'text-black', 'pb-2');
+            nameHeaderDiv.textContent = 'Name';
+            leaderboardDiv.appendChild(nameHeaderDiv);
+
+            const scoreHeaderDiv = document.createElement('div');
+            scoreHeaderDiv.classList.add('font-bold', 'text-black', 'pb-2', 'text-center');
+            scoreHeaderDiv.textContent = 'Score';
+            leaderboardDiv.appendChild(scoreHeaderDiv);
+
+            data.forEach((item, index) => {
+                const nameDiv = document.createElement('div');
+                nameDiv.classList.add('text-black');
+                nameDiv.innerHTML = `<span class="font-bold mr-2">${index + 1}.</span>${item.username}`;
+
+                const scoreDiv = document.createElement('div');
+                scoreDiv.classList.add('text-black', 'text-center');
+                scoreDiv.textContent = item.score;
+
+                leaderboardDiv.appendChild(nameDiv);
+                leaderboardDiv.appendChild(scoreDiv);
             });
         })
         .catch((error) => {
