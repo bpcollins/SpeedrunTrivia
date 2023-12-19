@@ -1,0 +1,844 @@
+{
+  "questions": [
+    {
+      "question": "What is the capital of France?",
+      "options": [
+        "Berlin",
+        "Madrid",
+        "Paris",
+        "Rome"
+      ],
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Jupiter",
+        "Mars",
+        "Venus",
+        "Earth"
+      ],
+      "correctAnswer": "Mars"
+    },
+    {
+      "question": "How many US states are there?",
+      "options": [
+        "50",
+        "52",
+        "48",
+        "100"
+      ],
+      "correctAnswer": "50"
+    },
+    {
+      "question": "How many continents are there?",
+      "options": [
+        "Six",
+        "Seven",
+        "Eight",
+        "Five"
+      ],
+      "correctAnswer": "Seven"
+    },
+    {
+      "question": "How many quarts in a gallon?",
+      "options": [
+        "Five",
+        "Six",
+        "Four",
+        "Eight"
+      ],
+      "correctAnswer": "Four"
+    },
+    {
+      "question": "How many feet are in a mile?",
+      "options": [
+        "3600",
+        "4850",
+        "5280",
+        "5480"
+      ],
+      "correctAnswer": "5280"
+    },
+    {
+      "question": "What is the capital of South Korea?",
+      "options": [
+        "Sejong",
+        "Incheon",
+        "Gwangju",
+        "Seoul"
+      ],
+      "correctAnswer": "Seoul"
+    },
+    {
+      "question": "What is the fastest animal in the world?",
+      "options": [
+        "Cheetah",
+        "Ostrich",
+        "Golden Eagle",
+        "Peregrine Falcon"
+      ],
+      "correctAnswer": "Peregrine Falcon"
+    },
+    {
+      "question": "What president is not featured on Mount Rushmore?",
+      "options": [
+        "Thomas Jefferson",
+        "Andrew Jackson",
+        "Theodore Roosevelt",
+        "Abraham Lincoln"
+      ],
+      "correctAnswer": "Andrew Jackson"
+    },
+    {
+      "question": "Who wrote 'The Catcher in the Rye'?",
+      "options": [
+        "J.K. Rowling",
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "J.D. Salinger"
+      ],
+      "correctAnswer": "J.D. Salinger"
+    },
+    {
+      "question": "Which planet is known as the 'Morning Star'?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Mercury",
+        "Venus"
+      ],
+      "correctAnswer": "Venus"
+    },
+    {
+      "question": "What is the largest island in the world?",
+      "options": [
+        "Australia",
+        "Greenland",
+        "Madagascar",
+        "Borneo"
+      ],
+      "correctAnswer": "Greenland"
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": [
+        "Rosalind Franklin",
+        "Marie Curie",
+        "Ada Lovelace",
+        "Jane Goodall"
+      ],
+      "correctAnswer": "Marie Curie"
+    },
+    {
+      "question": "What is the largest ocean mammal?",
+      "options": [
+        "Blue Whale",
+        "Dolphin",
+        "Seal",
+        "Manatee"
+      ],
+      "correctAnswer": "Blue Whale"
+    },
+    {
+      "question": "In which country is the Taj Mahal located?",
+      "options": [
+        "Egypt",
+        "India",
+        "Turkey",
+        "Pakistan"
+      ],
+      "correctAnswer": "India"
+    },
+    {
+      "question": "Who is the author of 'The Lord of the Rings' trilogy?",
+      "options": [
+        "J.R.R. Tolkien",
+        "J.K. Rowling",
+        "C.S. Lewis",
+        "George R.R. Martin"
+      ],
+      "correctAnswer": "J.R.R. Tolkien"
+    },
+    {
+      "question": "What is the smallest prime number?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "correctAnswer": "2"
+    },
+    {
+      "question": "Who is the author of '1984'?",
+      "options": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H.G. Wells"
+      ],
+      "correctAnswer": "George Orwell"
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Buenos Aires",
+        "Brasília"
+      ],
+      "correctAnswer": "Brasília"
+    },
+    {
+      "question": "In which year did the United States declare its independence?",
+      "options": [
+        "1789",
+        "1750",
+        "1800",
+        "1776"
+      ],
+      "correctAnswer": "1776"
+    },
+    {
+      "question": "What is the largest desert in the world?",
+      "options": [
+        "Gobi Desert",
+        "Antarctic Desert",
+        "Sahara Desert",
+        "Arctic Desert"
+      ],
+      "correctAnswer": "Sahara Desert"
+    },
+    {
+      "question": "Who is the author of 'Pride and Prejudice'?",
+      "options": [
+        "Charlotte Brontë",
+        "Jane Austen",
+        "Charles Dickens",
+        "Emily Brontë"
+      ],
+      "correctAnswer": "Jane Austen"
+    },
+    {
+      "question": "Which famous scientist developed the theory of relativity?",
+      "options": [
+        "Stephen Hawking",
+        "Galileo Galilei",
+        "Isaac Newton",
+        "Albert Einstein"
+      ],
+      "correctAnswer": "Albert Einstein"
+    },
+    {
+      "question": "What is the main ingredient in guacamole?",
+      "options": [
+        "Avocado",
+        "Onion",
+        "Garlic",
+        "Tomato"
+      ],
+      "correctAnswer": "Avocado"
+    },
+    {
+      "question": "Which country is known as the 'Land of the Midnight Sun'?",
+      "options": [
+        "Finland",
+        "Sweden",
+        "Denmark",
+        "Norway"
+      ],
+      "correctAnswer": "Norway"
+    },
+    {
+      "question": "What is the currency of China?",
+      "options": [
+        "Yen",
+        "Won",
+        "Ringgit",
+        "Yuan"
+      ],
+      "correctAnswer": "Yuan"
+    },
+    {
+      "question": "Who wrote 'The Great Gatsby'?",
+      "options": [
+        "John Steinbeck",
+        "Mark Twain",
+        "F. Scott Fitzgerald",
+        "Ernest Hemingway"
+      ],
+      "correctAnswer": "F. Scott Fitzgerald"
+    },
+    {
+      "question": "What is the largest bird in the world?",
+      "options": [
+        "Eagle",
+        "Penguin",
+        "Albatross",
+        "Ostrich"
+      ],
+      "correctAnswer": "Ostrich"
+    },
+    {
+      "question": "Who painted 'The Last Supper'?",
+      "options": [
+        "Michelangelo",
+        "Raphael",
+        "Caravaggio",
+        "Leonardo da Vinci"
+      ],
+      "correctAnswer": "Leonardo da Vinci"
+    },
+    {
+      "question": "What is the currency of France?",
+      "options": [
+        "Pound",
+        "Dollar",
+        "Franc",
+        "Euro"
+      ],
+      "correctAnswer": "Euro"
+    },
+    {
+      "question": "Who painted 'Starry Night'?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet",
+        "Salvador Dalí"
+      ],
+      "correctAnswer": "Vincent van Gogh"
+    },
+    {
+      "question": "Which country is known as the 'Land of the Rising Sun'?",
+      "options": [
+        "South Korea",
+        "China",
+        "Vietnam",
+        "Japan"
+      ],
+      "correctAnswer": "Japan"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": [
+        "Melbourne",
+        "Brisbane",
+        "Canberra",
+        "Sydney"
+      ],
+      "correctAnswer": "Canberra"
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": [
+        "Oscar Wilde",
+        "Jane Austen",
+        "Charles Dickens",
+        "William Shakespeare"
+      ],
+      "correctAnswer": "William Shakespeare"
+    },
+    {
+      "question": "In what year did the Titanic sink?",
+      "options": [
+        "1905",
+        "1920",
+        "1898",
+        "1912"
+      ],
+      "correctAnswer": "1912"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "options": [
+        "Saturn",
+        "Mars",
+        "Earth",
+        "Jupiter"
+      ],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Pablo Picasso",
+        "Michelangelo",
+        "Vincent van Gogh",
+        "Leonardo da Vinci"
+      ],
+      "correctAnswer": "Leonardo da Vinci"
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "options": [
+        "Indian Ocean",
+        "Southern Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean"
+      ],
+      "correctAnswer": "Pacific Ocean"
+    },
+    {
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": [
+        "Gold",
+        "Iron",
+        "Uranium",
+        "Oxygen"
+      ],
+      "correctAnswer": "Oxygen"
+    },
+    {
+      "question": "Who is known as the 'Father of Computer Science'?",
+      "options": [
+        "Bill Gates",
+        "Steve Jobs",
+        "Tim Berners-Lee",
+        "Alan Turing"
+      ],
+      "correctAnswer": "Alan Turing"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": [
+        "Beijing",
+        "Bangkok",
+        "Tokyo",
+        "Seoul"
+      ],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "options": [
+        "George Orwell",
+        "Mark Twain",
+        "J.K. Rowling",
+        "Harper Lee"
+      ],
+      "correctAnswer": "Harper Lee"
+    },
+    {
+      "question": "In which year did World War II end?",
+      "options": [
+        "1939",
+        "1950",
+        "1940",
+        "1945"
+      ],
+      "correctAnswer": "1945"
+    },
+    {
+      "question": "Who wrote 'The Odyssey'?",
+      "options": [
+        "Virgil",
+        "Sophocles",
+        "Aristotle",
+        "Homer"
+      ],
+      "correctAnswer": "Homer"
+    },
+    {
+      "question": "In what year did the first manned moon landing occur?",
+      "options": [
+        "1972",
+        "1981",
+        "1955",
+        "1969"
+      ],
+      "correctAnswer": "1969"
+    },
+    {
+      "question": "Which gas makes up the majority of Earth's atmosphere?",
+      "options": [
+        "Carbon Dioxide",
+        "Hydrogen",
+        "Oxygen",
+        "Nitrogen"
+      ],
+      "correctAnswer": "Nitrogen"
+    },
+    {
+      "question": "Who painted 'The Persistence of Memory'?",
+      "options": [
+        "Claude Monet",
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Salvador Dalí"
+      ],
+      "correctAnswer": "Salvador Dalí"
+    },
+    {
+      "question": "Which planet is known as the 'Blue Planet'?",
+      "options": [
+        "Earth",
+        "Neptune",
+        "Uranus",
+        "Venus"
+      ],
+      "correctAnswer": "Earth"
+    },
+    {
+      "question": "Who developed the theory of general relativity?",
+      "options": [
+        "Isaac Newton",
+        "Stephen Hawking",
+        "Galileo Galilei",
+        "Albert Einstein"
+      ],
+      "correctAnswer": "Albert Einstein"
+    },
+    {
+      "question": "What is the largest big cat in the world?",
+      "options": [
+        "Lion",
+        "Jaguar",
+        "Leopard",
+        "Tiger"
+      ],
+      "correctAnswer": "Tiger"
+    },
+    {
+      "question": "In which year did the Berlin Wall fall?",
+      "options": [
+        "1991",
+        "1985",
+        "1990",
+        "1989"
+      ],
+      "correctAnswer": "1989"
+    },
+    {
+      "question": "What is the capital of Italy?",
+      "options": [
+        "Milan",
+        "Florence",
+        "Venice",
+        "Rome"
+      ],
+      "correctAnswer": "Rome"
+    },
+    {
+      "question": "In what country would you find the ancient Inca city of Machu Picchu?",
+      "options": [
+        "Chile",
+        "Brazil",
+        "Peru",
+        "Argentina"
+      ],
+      "correctAnswer": "Peru"
+    },
+    {
+      "question": "What element is represented by the symbol 'Na'?",
+      "options": [
+        "Nitrogen",
+        "Sodium",
+        "Neon",
+        "Nickel"
+      ],
+      "correctAnswer": "Sodium"
+    },
+    {
+      "question": "Who is known as the 'Lady with the Lamp'?",
+      "options": [
+        "Marie Curie",
+        "Florence Nightingale",
+        "Clara Barton",
+        "Mother Teresa"
+      ],
+      "correctAnswer": "Florence Nightingale"
+    },
+    {
+      "question": "What is the longest river in Africa?",
+      "options": [
+        "Nile",
+        "Congo",
+        "Zambezi",
+        "Niger"
+      ],
+      "correctAnswer": "Nile"
+    },
+    {
+      "question": "Who wrote 'Brave New World'?",
+      "options": [
+        "George Orwell",
+        "Aldous Huxley",
+        "Ray Bradbury",
+        "H.G. Wells"
+      ],
+      "correctAnswer": "Aldous Huxley"
+    },
+    {
+      "question": "Which country is the largest in size?",
+      "options": [
+        "Russia",
+        "Canada",
+        "China",
+        "United States"
+      ],
+      "correctAnswer": "Russia"
+    },
+    {
+      "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "options": [
+        "Bessie Coleman",
+        "Harriet Quimby",
+        "Amelia Earhart",
+        "Sally Ride"
+      ],
+      "correctAnswer": "Amelia Earhart"
+    },
+    {
+      "question": "What is the main ingredient in chocolate?",
+      "options": [
+        "Cocoa",
+        "Milk",
+        "Sugar",
+        "Butter"
+      ],
+      "correctAnswer": "Cocoa"
+    },
+    {
+      "question": "Who is the author of 'The Picture of Dorian Gray'?",
+      "options": [
+        "William Shakespeare",
+        "Oscar Wilde",
+        "Charles Dickens",
+        "Jane Austen"
+      ],
+      "correctAnswer": "Oscar Wilde"
+    },
+    {
+      "question": "What is the hardest known natural material?",
+      "options": [
+        "Iron",
+        "Diamond",
+        "Steel",
+        "Quartz"
+      ],
+      "correctAnswer": "Diamond"
+    },
+    {
+      "question": "In what country would you find the ancient city of Machu Picchu?",
+      "options": [
+        "Brazil",
+        "Chile",
+        "Peru",
+        "Mexico"
+      ],
+      "correctAnswer": "Peru"
+    },
+    {
+      "question": "What is the tallest building in the world?",
+      "options": [
+        "Shanghai Tower",
+        "Burj Khalifa",
+        "Abraj Al Bait",
+        "One World Trade Center"
+      ],
+      "correctAnswer": "Burj Khalifa"
+    },
+    {
+      "question": "What is the capital of Kenya?",
+      "options": [
+        "Nairobi",
+        "Mombasa",
+        "Kisumu",
+        "Nakuru"
+      ],
+      "correctAnswer": "Nairobi"
+    },
+    {
+      "question": "What is the smallest planet in our solar system?",
+      "options": [
+        "Mercury",
+        "Mars",
+        "Venus",
+        "Pluto"
+      ],
+      "correctAnswer": "Mercury"
+    },
+    {
+      "question": "What is the largest organ of the human body?",
+      "options": [
+        "Heart",
+        "Liver",
+        "Skin",
+        "Lung"
+      ],
+      "correctAnswer": "Skin"
+    },
+    {
+      "question": "Which country is known for building pyramids?",
+      "options": [
+        "Mexico",
+        "Peru",
+        "Egypt",
+        "India"
+      ],
+      "correctAnswer": "Egypt"
+    },
+    {
+      "question": "What is the main language spoken in Argentina?",
+      "options": [
+        "Spanish",
+        "Portuguese",
+        "English",
+        "French"
+      ],
+      "correctAnswer": "Spanish"
+    },
+    {
+      "question": "Who wrote 'War and Peace'?",
+      "options": [
+        "Fyodor Dostoevsky",
+        "Leo Tolstoy",
+        "Anton Chekhov",
+        "Ivan Turgenev"
+      ],
+      "correctAnswer": "Leo Tolstoy"
+    },
+    {
+      "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "correctAnswer": "Carbon Dioxide"
+    },
+    {
+      "question": "Who is the Greek goddess of wisdom?",
+      "options": [
+        "Hera",
+        "Athena",
+        "Aphrodite",
+        "Artemis"
+      ],
+      "correctAnswer": "Athena"
+    },
+    {
+      "question": "What is the periodic table symbol for iron?",
+      "options": [
+        "Ir",
+        "Fe",
+        "In",
+        "Io"
+      ],
+      "correctAnswer": "Fe"
+    },
+    {
+      "question": "Who painted the 'Sistine Chapel Ceiling'?",
+      "options": [
+        "Leonardo da Vinci",
+        "Raphael",
+        "Michelangelo",
+        "Donatello"
+      ],
+      "correctAnswer": "Michelangelo"
+    },
+    {
+      "question": "Which continent is the Sahara Desert located on?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Australia",
+        "South America"
+      ],
+      "correctAnswer": "Africa"
+    },
+    {
+      "question": "What is the capital of Greece?",
+      "options": [
+        "Athens",
+        "Sparta",
+        "Rhodes",
+        "Thessaloniki"
+      ],
+      "correctAnswer": "Athens"
+    },
+    {
+      "question": "Who wrote 'A Tale of Two Cities'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
+      ],
+      "correctAnswer": "Charles Dickens"
+    },
+    {
+      "question": "What is the deepest part of the world's oceans?",
+      "options": [
+        "Mariana Trench",
+        "Tonga Trench",
+        "Java Trench",
+        "Puerto Rico Trench"
+      ],
+      "correctAnswer": "Mariana Trench"
+    },
+    {
+      "question": "Who was the first person to walk on the moon?",
+      "options": [
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "John Glenn"
+      ],
+      "correctAnswer": "Neil Armstrong"
+    },
+    {
+      "question": "What is the largest continent on Earth?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America"
+      ],
+      "correctAnswer": "Asia"
+    },
+    {
+      "question": "Who is known as the 'Father of Geometry'?",
+      "options": [
+        "Archimedes",
+        "Euclid",
+        "Pythagoras",
+        "Aristotle"
+      ],
+      "correctAnswer": "Euclid"
+    },
+    {
+      "question": "What element does 'O' represent on the periodic table?",
+      "options": [
+        "Osmium",
+        "Oxygen",
+        "Gold",
+        "Oganesson"
+      ],
+      "correctAnswer": "Oxygen"
+    },
+    {
+      "question": "What is the capital of Germany?",
+      "options": [
+        "Munich",
+        "Frankfurt",
+        "Berlin",
+        "Hamburg"
+      ],
+      "correctAnswer": "Berlin"
+    },
+    {
+      "question": "Who wrote 'The Divine Comedy'?",
+      "options": [
+        "William Shakespeare",
+        "Dante Alighieri",
+        "Geoffrey Chaucer",
+        "Homer"
+      ],
+      "correctAnswer": "Dante Alighieri"
+    }
+  ]
+}
