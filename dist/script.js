@@ -43,13 +43,15 @@ function displayQuestion(questionObj) {
     questionContainer.textContent = questionObj.question;
     answersContainer.innerHTML = "";
 
-    questionObj.options.forEach((option, index) => {
-        const button = document.createElement("button");
-        button.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
-        button.addEventListener("click", () => checkAnswer(button, option));
-        button.classList.add("bg-white", "md:hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
-        answersContainer.appendChild(button);
-    });
+    if (gameStarted) {
+        questionObj.options.forEach((option, index) => {
+            const button = document.createElement("button");
+            button.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
+            button.addEventListener("click", () => checkAnswer(button, option));
+            button.classList.add("bg-white", "md:hover:bg-gray-300", "text-black", "font-thin", "py-2", "px-4", "rounded-xl");
+            answersContainer.appendChild(button);
+        });
+    }
 }
 
 function checkAnswer(selectedButton, selectedAnswer) {
