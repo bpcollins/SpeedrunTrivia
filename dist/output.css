@@ -3869,6 +3869,16 @@ details.collapse summary::-webkit-details-marker {
   --tw-gradient-stops: var(--tw-gradient-from), #1e293b var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.via-teal-700 {
+  --tw-gradient-to: rgb(3 102 114 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #036672 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-teal-600 {
+  --tw-gradient-to: rgb(4 116 129 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #047481 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .to-purple-950 {
   --tw-gradient-to: #3b0764 var(--tw-gradient-to-position);
 }
