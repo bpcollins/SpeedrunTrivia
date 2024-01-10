@@ -3903,6 +3903,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-gradient-to: #1e293b var(--tw-gradient-to-position);
 }
 
+.to-teal-900 {
+  --tw-gradient-to: #014451 var(--tw-gradient-to-position);
+}
+
 .p-1 {
   padding: 0.25rem;
 }
